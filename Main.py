@@ -3,7 +3,7 @@
 # Version 1
 # TODO: ask the user if they like coffee
 #       Record the answer
-#       Give a respdwonse back to the answer
+#       Give a response back to the answer
 
 '''
 like_coffee = input("Do you like coffee? ")
@@ -22,9 +22,11 @@ while keep_going == "":
 
     if like_coffee == "yes" or like_coffee == "Yes" or like_coffee == "Y" or like_coffee == "y":
         print("That is great! I like coffee too.")
+        keep_going = "finished"
 
     elif like_coffee == "no" or like_coffee == "No" or like_coffee == "n" or like_coffee == "N":
-        print("You are missing out! Why not giving it a try")
+        print("You are missing out! Why not giving it a try? ")
+        keep_going = "finished"
     
     else:
-        print("I dont't understand")
+        print("I dont't understand. ")
